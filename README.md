@@ -1,4 +1,4 @@
-# 🖥️ FOS — Faculty Operating System
+# FOS — Faculty Operating System
 ![C](https://img.shields.io/badge/C-99%25-A8B9CC?style=flat-square&logo=c&logoColor=white)
 ![x86](https://img.shields.io/badge/x86-32--bit-red?style=flat-square&logo=intel&logoColor=white)
 ![Bochs](https://img.shields.io/badge/Bochs-Emulator-blue?style=flat-square)
@@ -12,7 +12,7 @@
 
 ---
 
-## ⚡ Key Features at a Glance
+## Key Features
 
 | What | How | Why It Matters |
 |------|-----|---|
@@ -25,17 +25,17 @@
 
 ---
 
-## 🎯 What This Demonstrates
+## Key Capabilities
 
-✅ **Systems Programming:** Low-level C code managing CPU interrupts, page tables, and memory hierarchies  
-✅ **OS Fundamentals:** Virtual memory, paging, context switching, interrupt handling  
-✅ **Algorithm Analysis:** Implemented 4 replacement algorithms; measured tradeoffs  
-✅ **Embedded Thinking:** Ran on Bochs x86 emulator with real hardware constraints  
-✅ **Testing Discipline:** Built 10+ test programs to validate each subsystem  
+**Systems Programming:** Low-level C code managing CPU interrupts, page tables, and memory hierarchies  
+**OS Fundamentals:** Virtual memory, paging, context switching, interrupt handling  
+**Algorithm Analysis:** Implemented 4 replacement algorithms with comparative analysis  
+**Hardware Constraints:** Validated on Bochs x86 emulator with realistic memory and CPU constraints  
+**Comprehensive Testing:** 10+ test programs validating each OS subsystem independently  
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - GCC with 32-bit support (or i386-elf cross-compiler)
@@ -72,7 +72,7 @@ FOS> run fos_helloWorld 5        # Run hello world program
 
 ---
 
-## 📊 Architecture Overview
+## Architecture Overview
 
 ```
 User Programs (Test Suite)
@@ -108,7 +108,7 @@ User Programs (Test Suite)
 
 ---
 
-## 💻 Available Commands
+## Available Commands
 
 ### Process Management
 ```bash
@@ -141,7 +141,7 @@ FOS> schedMLFQ 3 100 200 400        # MLFQ: 3 levels, 100/200/400ms quanta
 
 ---
 
-## ✅ Testing & Validation
+## Testing and Validation
 
 ### Kernel Heap Tests
 ```bash
@@ -185,7 +185,7 @@ FOS> run tef2 20       # Test env_free with malloc
 
 ---
 
-## 🏗️ Core Components
+## Core Components
 
 | Component | File | Purpose |
 |-----------|------|---------|
@@ -199,7 +199,7 @@ FOS> run tef2 20       # Test env_free with malloc
 
 ---
 
-## 🗺️ Memory Layout
+## Memory Layout
 
 ```
 User/Kernel Virtual Address Space (32-bit x86)
@@ -221,7 +221,7 @@ User/Kernel Virtual Address Space (32-bit x86)
 
 ---
 
-## 🔍 Interesting Design Decisions
+## Design Decisions
 
 ### 1. **Why Four Heap Placement Strategies?**
 - **First Fit:** Fast, simple, but fragmentation
@@ -247,17 +247,17 @@ Round Robin alone treats all processes equally. MLFQ adds **priority feedback:**
 
 ---
 
-## 📈 What Recruiters See
+## Key Accomplishments
 
-✅ **You understand the full OS stack** — from CPU interrupts to user malloc  
-✅ **You can implement complex algorithms** — paging, scheduling, memory management  
-✅ **You tested rigorously** — 10+ test programs, not just "it compiles"  
-✅ **You handled real constraints** — x86 emulation, page faults, context switches  
-✅ **You documented your thinking** — design decisions explained above  
+**Comprehensive OS Implementation:** Full stack implementation from CPU interrupt handling to user-space memory management  
+**Algorithm Implementation:** Sophisticated implementations of paging, scheduling, and memory management algorithms  
+**Rigorous Validation:** 10+ test suites validating each OS subsystem in isolation  
+**Hardware Realism:** Fully functional within x86 architectural constraints including page faults and context switching  
+**Clear Documentation:** Documented design rationale and algorithm tradeoffs for each major component  
 
 ---
 
-## 🏫 Academic Context
+## Project Context
 
 **Faculty of Computer and Information Sciences**  
 **Ain Shams University, Cairo, Egypt**  
@@ -267,7 +267,7 @@ This was a semester-long capstone project demonstrating mastery of OS fundamenta
 
 ---
 
-## 📝 How to Build/Run
+## Build and Execution
 
 ### Prerequisites
 - GCC (Linux/WSL)
@@ -299,15 +299,6 @@ FOS> help               # List all commands
 
 ---
 
-## 🚀 If You Were Hiring
-
-**What makes this impressive:**
-- **Real code:** Not a toy scheduler or fake paging algorithm
-- **Tested:** Multiple test programs validate each component
-- **Constrained:** Had to work within x86 architecture limits
-- **Thoughtful:** Design decisions documented
-- **Extensible:** Easy to swap algorithms (FIFO ↔ LRU ↔ CLOCK)
-
 ---
 
-*Built from scratch. Bootloader to shell. ~2,000 lines of kernel C.*
+**Implementation Note:** Developed from scratch including bootloader through command-line shell, approximately 2,000 lines of C kernel code plus supporting libraries and test suite.
