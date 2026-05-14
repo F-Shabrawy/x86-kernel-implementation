@@ -311,6 +311,3 @@ FOS> help               # List all commands
 ---
 
 *Built from scratch. Bootloader to shell. ~2,000 lines of kernel C.*
-"# x86-kernel-implementation" 
-#   x 8 6 - k e r n e l - i m p l e m e n t a t i o n  
- 
